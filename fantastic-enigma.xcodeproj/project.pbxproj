@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1254FB1529E5E42C00C7CB27 /* LaunchDarkly in Frameworks */ = {isa = PBXBuildFile; productRef = 1254FB1429E5E42C00C7CB27 /* LaunchDarkly */; };
 		1281B5C929DB60CB00A9E694 /* fantastic_enigmaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1281B5C829DB60CB00A9E694 /* fantastic_enigmaApp.swift */; };
 		1281B5CB29DB60CB00A9E694 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1281B5CA29DB60CB00A9E694 /* Persistence.swift */; };
 		1281B5CE29DB60CB00A9E694 /* fantastic_enigma.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1281B5CC29DB60CB00A9E694 /* fantastic_enigma.xcdatamodeld */; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1254FB1529E5E42C00C7CB27 /* LaunchDarkly in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +153,9 @@
 			dependencies = (
 			);
 			name = "fantastic-enigma";
+			packageProductDependencies = (
+				1254FB1429E5E42C00C7CB27 /* LaunchDarkly */,
+			);
 			productName = "fantastic-enigma";
 			productReference = 1281B5C529DB60CB00A9E694 /* fantastic-enigma.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 1281B5BC29DB60CB00A9E694;
+			packageReferences = (
+				1254FB1329E5E42C00C7CB27 /* XCRemoteSwiftPackageReference "ios-client-sdk" */,
+			);
 			productRefGroup = 1281B5C629DB60CB00A9E694 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -620,6 +628,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1254FB1329E5E42C00C7CB27 /* XCRemoteSwiftPackageReference "ios-client-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/launchdarkly/ios-client-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1254FB1429E5E42C00C7CB27 /* LaunchDarkly */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1254FB1329E5E42C00C7CB27 /* XCRemoteSwiftPackageReference "ios-client-sdk" */;
+			productName = LaunchDarkly;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1281B5CC29DB60CB00A9E694 /* fantastic_enigma.xcdatamodeld */ = {
